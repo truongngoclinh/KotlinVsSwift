@@ -15,7 +15,8 @@
 
 > Reference to [`Mindorks: from Java to Kotlin`](https://github.com/MindorksOpenSource/from-java-to-kotlin)
 
---- `Print`
+--- 
+### Display text
 > Java
 
 ```java
@@ -43,7 +44,8 @@ NSLog("Linh Truong");
 NSLog("\nLinh Truong");
 ```
 
---- `Variable, Constant declaration`
+--- 
+### Variable, Constant declaration
 > Java
 
 ```java
