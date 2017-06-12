@@ -15,7 +15,7 @@
 
 > Reference to [`Mindorks: from Java to Kotlin`](https://github.com/MindorksOpenSource/from-java-to-kotlin)
 
----
+--- `Print`
 > Java
 
 ```java
@@ -38,37 +38,37 @@ print("\nLinh Truong")
 ```
 > Objective C
 
-```objective c
+```c
 NSLog("Linh Truong");
 NSLog("\nLinh Truong");
 ```
 
----
+--- `Variable, Constant declaration`
 > Java
 
 ```java
-System.out.print("Linh Truong");
-System.out.println("Linh Truong");
+String name = "Linh Truong";
+final String name = "Linh Truong";
 ```
 
 > Kotlin
 
 ```kotlin
-print("Linh Truong")
-println("Linh Truong")
+var name = "Linh Truong"
+val name = "Linh Truong"
 ```
 
 > Swift
 
 ```swift
-print("Linh Truong)
-print("\nLinh Truong")
+var name = "Linh Truong"
+let name = "Linh Truong"
 ```
 > Objective C
 
-```objective c
-NSLog("Linh Truong");
-NSLog("\nLinh Truong");
+```c
+NSString *name = @"Linh Truong";
+static NSString *const name = @"Linh Truong";
 ```
 
 ---
