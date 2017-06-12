@@ -16,6 +16,34 @@
 > Reference to [`Mindorks: from Java to Kotlin`](https://github.com/MindorksOpenSource/from-java-to-kotlin)
 
 --- 
+### Variable, Constant declaration
+> Java
+
+```java
+String name = "Linh Truong";
+final String name = "Linh Truong";
+```
+
+> Kotlin
+
+```kotlin
+var name = "Linh Truong"
+val name = "Linh Truong"
+```
+
+> Swift
+
+```swift
+var name = "Linh Truong"
+let name = "Linh Truong"
+```
+> Objective C
+
+```c
+NSString *name = @"Linh Truong";
+NSString *const name = @"Linh Truong";
+```
+---
 ### Display text
 > Java
 
@@ -58,35 +86,6 @@ NSLog("\nLinh Truong");
 NSString *firstName = @"Linh";
 NSString *lastName = @"Truong";
 NSString *message = [NSString stringWithFormat:@"My name is: %@ %@", firstName, lastName];
-```
-
---- 
-### Variable, Constant declaration
-> Java
-
-```java
-String name = "Linh Truong";
-final String name = "Linh Truong";
-```
-
-> Kotlin
-
-```kotlin
-var name = "Linh Truong"
-val name = "Linh Truong"
-```
-
-> Swift
-
-```swift
-var name = "Linh Truong"
-let name = "Linh Truong"
-```
-> Objective C
-
-```c
-NSString *name = @"Linh Truong";
-NSString *const name = @"Linh Truong";
 ```
 
 ---
