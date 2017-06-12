@@ -209,16 +209,22 @@ for ((k, v) in map) {
 
 ```swift
 var dic: [String: String] = ["key1":"value1", "key2":"value2"]
-print(dic["key1"].debugDescription);
+dic["key1"]
         
 for (key, value) in dic {
-  print("\(key) -> \(value)");
+  print("\(key) -> \(value)")
 }
 ```
 
 > Objective C
 
-```c
+```
+NSDictionary *dic = @{@"key1":@"value1", @"key2":@"value2"};
+[dic objectForKey:@"key1"];
+
+for (NSString* key in dic) {
+  NSLog(@"%@", [dic objectForKey:key]);
+}
 
 ```
 
