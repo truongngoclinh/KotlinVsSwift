@@ -1,8 +1,8 @@
-<p align="center">
-<img alt="Kotlin" src="http://antonioleiva.com/wp-content/uploads/2015/03/kotlin.png">
+<p align="left">
+<img alt="Kotlin" height="200" width="200" src="http://antonioleiva.com/wp-content/uploads/2015/03/kotlin.png">
 </p>
-<p align="center">
-<img alt="Swift" src="https://cdn1.macworld.co.uk/cmsdata/features/3523633/swift_3_thumb800.jpg">
+<p align="right">
+<img alt="Swift" height="200" width="200" src="https://cdn1.macworld.co.uk/cmsdata/features/3523633/swift_3_thumb800.jpg">
 </p>
 
 
