@@ -9,9 +9,19 @@
 
 # Kotlin vs Swift 3 
 
-> Kotlin is Swift in `Android?` - How they look!
+> Kotlin is Swift in Android? - How they look!
+
 > I added Java & Objective C syntax also, so everyone can easily understand the code.
+
+> Reference to [`Mindorks: from Java to Kotlin`](https://github.com/MindorksOpenSource/from-java-to-kotlin)
+
 ---
+> Java
+
+```java
+System.out.print("Linh Truong");
+System.out.println("Linh Truong");
+```
 
 > Kotlin
 
@@ -26,20 +36,39 @@ println("Linh Truong")
 print("Linh Truong)
 print("\nLinh Truong")
 ```
+> Objective C
+
+```objective c
+NSLog("Linh Truong");
+NSLog("\nLinh Truong");
+```
 
 ---
+> Java
+
+```java
+System.out.print("Linh Truong");
+System.out.println("Linh Truong");
+```
+
 > Kotlin
 
 ```kotlin
-var name = "Linh Truong"
-val name = "Linh Truong"
+print("Linh Truong")
+println("Linh Truong")
 ```
 
 > Swift
 
 ```swift
-var name = "Linh Truong"
-let name = "Linh Truong"
+print("Linh Truong)
+print("\nLinh Truong")
+```
+> Objective C
+
+```objective c
+NSLog("Linh Truong");
+NSLog("\nLinh Truong");
 ```
 
 ---
