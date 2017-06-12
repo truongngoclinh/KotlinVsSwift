@@ -22,6 +22,10 @@
 ```java
 System.out.print("Linh Truong");
 System.out.println("Linh Truong");
+
+String firstName = "Linh";
+String lastName = "Truong";
+String message = "My name is: " + firstName + lastName;
 ```
 
 > Kotlin
@@ -29,6 +33,10 @@ System.out.println("Linh Truong");
 ```kotlin
 print("Linh Truong")
 println("Linh Truong")
+
+var firstName = "Linh"
+var lastName = "Truong"
+var message = "My name is: $firstName $lastName" 
 ```
 
 > Swift
@@ -36,12 +44,20 @@ println("Linh Truong")
 ```swift
 print("Linh Truong)
 print("\nLinh Truong")
+
+var firstName = "Linh"
+var lastName = "Truong"
+var message = "My name is: \(firstName) \(lastName)"
 ```
 > Objective C
 
 ```c
 NSLog("Linh Truong");
 NSLog("\nLinh Truong");
+
+NSString *firstName = @"Linh";
+NSString *lastName = @"Truong";
+NSString *message = [NSString stringWithFormat:@"My name is: %@ %@", firstName, lastName];
 ```
 
 --- 
@@ -70,7 +86,51 @@ let name = "Linh Truong"
 
 ```c
 NSString *name = @"Linh Truong";
-static NSString *const name = @"Linh Truong";
+NSString *const name = @"Linh Truong";
 ```
 
 ---
+### Optional or null (nil) case
+> Java
+
+```java
+String name;
+name = null;
+
+if (name != null) {
+  // excute if not null
+}
+```
+
+> Kotlin
+
+```kotlin
+var name: String?
+name = null
+
+name?.let {
+   // excute if not null
+}
+```
+
+> Swift
+
+```swift
+var name: String?
+name = nil
+
+if let not_null_name = name {
+  // excute if not null
+}
+```
+> Objective C
+
+```c
+NSString *name = @"Linh Truong";
+if (name) {
+  // excute if not null
+}
+```
+
+---
+
