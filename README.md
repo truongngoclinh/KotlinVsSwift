@@ -28,6 +28,7 @@ final String name = "Linh Truong";
 
 ```kotlin
 var name = "Linh Truong"
+var name: String = "Linh Truong"
 val name = "Linh Truong"
 ```
 
@@ -35,6 +36,7 @@ val name = "Linh Truong"
 
 ```swift
 var name = "Linh Truong"
+var name: String = "Linh Truong"
 let name = "Linh Truong"
 ```
 > Objective C
@@ -173,7 +175,51 @@ func add(x: Int, y: Int) -> Int {}
 - (void)displayWithFirstName:(NSString*)first LastName:(NSString*)last {}
 [self displayWithFirstName:@"Linh" LastName:@"Truong"];;
 
-- (int)add:(int)x :(int)y {
+- (int)add:(int)x :(int)y {}
+```
+
+---
+### Map or Dictionary
+> Java
+
+```java
+Map<String, String> map = new HashMap<>();
+map.add("key1", "value1");
+map.add("key2", "value2");
+
+map.get("key1")
+for (Map.Entry<String, String> entry : map.entrySet()) {
+  System.out.print(entry.getKey() + " -> " + entry.getValue());
+}
+```
+
+> Kotlin
+
+```kotlin
+var map = mapOf("key1" to "value1", "key2" to "value2")
+map["key1"]
+
+// traversing
+for ((k, v) in map) {
+  print("$k -> $v");
+}
+```
+
+> Swift
+
+```swift
+var dic: [String: String] = ["key1":"value1", "key2":"value2"]
+print(dic["key1"].debugDescription);
+        
+for (key, value) in dic {
+  print("\(key) -> \(value)");
+}
+```
+
+> Objective C
+
+```c
+
 ```
 
 ---
