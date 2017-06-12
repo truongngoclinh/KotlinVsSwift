@@ -137,7 +137,7 @@ if (name) {
 
 ```java
 void display(String firstName, String lastName) {}
-int add(int x, int y){}
+int add(int x, int y) {}
 
 display("Linh", "Truong");
 ```
@@ -145,7 +145,7 @@ display("Linh", "Truong");
 > Kotlin
 
 ```kotlin
-fun display(firstName: String, lastName: String){}
+fun display(firstName: String, lastName: String) {}
 fun display(firstName: String = "defaultFirstName", lastName: String = "defaultLastName") {}
 fun add(x: Int, y: Int): Int {}
 
@@ -155,7 +155,7 @@ display("Linh", "Truong")
 > Swift
 
 ```swift
-func display(firstName: String, lastName: String){}
+func display(firstName: String, lastName: String) {}
 display(firstName: "Linh", lastName: "Truong")
 
 func display(_ firstName: String, _ lastName: String) {}
@@ -168,7 +168,7 @@ func add(x: Int, y: Int) -> Int {}
 
 ```c
 - (void)display:(NSString*)firstName :(NSString*)lastName {}
-[self display1:@"Linh" :@"Truong"];
+[self display:@"Linh" :@"Truong"];
  
 - (void)displayWithFirstName:(NSString*)first LastName:(NSString*)last {}
 [self displayWithFirstName:@"Linh" LastName:@"Truong"];;
@@ -177,4 +177,6 @@ func add(x: Int, y: Int) -> Int {}
 ```
 
 ---
+
+Updating...
 
