@@ -188,6 +188,8 @@ map.add("key1", "value1");
 map.add("key2", "value2");
 
 map.get("key1")
+
+// traversing
 for (Map.Entry<String, String> entry : map.entrySet()) {
   System.out.print(entry.getKey() + " -> " + entry.getValue());
 }
@@ -197,6 +199,7 @@ for (Map.Entry<String, String> entry : map.entrySet()) {
 
 ```kotlin
 var map = mapOf("key1" to "value1", "key2" to "value2")
+
 map["key1"]
 
 // traversing
@@ -209,8 +212,10 @@ for ((k, v) in map) {
 
 ```swift
 var dic: [String: String] = ["key1":"value1", "key2":"value2"]
+
 dic["key1"]
-        
+
+// traversing
 for (key, value) in dic {
   print("\(key) -> \(value)")
 }
@@ -220,8 +225,10 @@ for (key, value) in dic {
 
 ```
 NSDictionary *dic = @{@"key1":@"value1", @"key2":@"value2"};
+
 [dic objectForKey:@"key1"];
 
+// traversing
 for (NSString* key in dic) {
   NSLog(@"%@", [dic objectForKey:key]);
 }
