@@ -9,21 +9,36 @@
 
 # Kotlin vs Swift 3 
 
-> Kotlin vs Swift 3  - How they are different!
+> Kotlin is Swift in `Android?` - How they look!
 ---
 
 > Kotlin
 
-```java
-System.out.print("Amit Shekhar");
-System.out.println("Amit Shekhar");
+```kotlin
+print("Linh Truong")
+println("Linh Truong")
 ```
 
 > Swift
 
+```swift
+print("Linh Truong)
+print("\nLinh Truong")
+```
+
+---
+> Kotlin
+
 ```kotlin
-print("Amit Shekhar")
-println("Amit Shekhar")
+var name = "Linh Truong"
+val name = "Linh Truong"
+```
+
+> Swift
+
+```swift
+var name = "Linh Truong"
+let name = "Linh Truong"
 ```
 
 ---
