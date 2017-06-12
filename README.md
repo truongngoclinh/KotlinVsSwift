@@ -10,6 +10,7 @@
 # Kotlin vs Swift 3 
 
 > Kotlin is Swift in `Android?` - How they look!
+> I added Java & Objective C syntax also, so everyone can easily understand the code.
 ---
 
 > Kotlin
