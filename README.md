@@ -128,6 +128,8 @@ if let not_null_name = name {
 
 ```c
 NSString *name = @"Linh Truong";
+name = nil;
+
 if (name) {
   // excute if not null
 }
