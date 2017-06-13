@@ -43,7 +43,7 @@ let name = "Linh Truong"
 
 ```c
 NSString *name = @"Linh Truong";
-NSString *const name = @"Linh Truong";
+static NSString *const name = @"Linh Truong";
 ```
 ---
 ### Display text
