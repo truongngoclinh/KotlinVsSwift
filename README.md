@@ -81,7 +81,7 @@ var message = "My name is: \(firstName) \(lastName)"
 ```
 > Objective C
 
-```java
+```objective-c
 NSLog("Linh Truong");
 NSLog("\nLinh Truong");
 
@@ -126,7 +126,7 @@ if let not_null_name = name {
 ```
 > Objective C
 
-```java
+```objective-c
 NSString *name = @"Linh Truong";
 name = nil;
 
@@ -170,7 +170,7 @@ func add(x: Int, y: Int) -> Int {}
 
 > Objective C
 
-```java
+```objective-c
 - (void)display:(NSString*)firstName :(NSString*)lastName {}
 [self display:@"Linh" :@"Truong"];
  
@@ -225,7 +225,7 @@ for (key, value) in dic {
 
 > Objective C
 
-```java
+```objective-c
 NSDictionary *dic = @{@"key1":@"value1", @"key2":@"value2"};
 
 [dic objectForKey:@"key1"];
@@ -249,6 +249,8 @@ for (int i = 1; i <= 10 ; i+=2) { }
 for (int i = 10; i >= 1 ; i-=2) { }
 for (String item : collection) { }
 for (Map.Entry<String, String> entry: map.entrySet()) { }
+
+for (Car car : cars) {}
 ```
 
 > Kotlin
@@ -261,6 +263,8 @@ for (i in 1..10 step 2) { }
 for (i in 10 downTo 1 step 2) { }
 for (item in collection) { }
 for ((key, value) in map) { }
+
+cars.forEach {  }
 ```
 
 > Swift
@@ -271,13 +275,117 @@ for i in 1..<10 {}
 for i in stride(from: 10, to: 1, by: -1) {} or for i in (1...10).reversed() {}
 for i in stride(from: 1, to: 10, by: 2) {}
 for i in stride(from: 10, to: 1, by: -2) {}
-for item in array {}
+for item in collection {}
 for (k,v) in dic {}
+
+cars.forEach { (item) in 
+  // 
+}
 ```
 
 > Objective C
-```java
+```objective-c
+for (int i = 1; i <= 10 ; i++) { }
+for (int i = 1; i < 10 ; i++) { }
+for (int i = 10; i >= 1 ; i--) { }
+for (int i = 1; i <= 10 ; i+=2) { }
+for (int i = 10; i >= 1 ; i-=2) { }
+for (id item in collection) {}
+for (NSString* key in dic) { }
 
+for (Car *car in cars) {}
+```
+
+---
+### Instance check
+> Java
+
+```java
+int score = // some score;
+String grade;
+switch (score) {
+	case 10:
+	case 9:
+		grade = "Excellent";
+		break;
+	case 8:
+	case 7:
+	case 6:
+		grade = "Good";
+		break;
+	case 5:
+	case 4:
+		grade = "Ok";
+		break;
+	case 3:
+	case 2:
+	case 1:
+		grade = "Fail";
+		break;
+	default:
+	    grade = "Fail";				
+}
+```
+
+> Kotlin
+
+```kotlin
+var score = // some score
+var grade = when (score) {
+	9, 10 -> "Excellent" 
+	in 6..8 -> "Good"
+	4, 5 -> "Ok"
+	in 1..3 -> "Fail"
+	else -> "Fail"
+}
+```
+
+> Swift
+
+```swift
+let score = 1
+var grade = String()
+switch score {
+  case 9, 10:
+     grade = "Good"
+  case 6...8:
+     grade = "Good"
+  case 4,5:
+     grade = "Ok"
+  case 1...3:
+     grade = "Fail"
+  default:
+     grade = "Fail"
+}
+```
+
+> Objective C
+```objective-c
+NSInteger score = 9;
+NSString *grade = [[NSString alloc] init];
+switch (score) {
+  case 9:
+  case 10:
+    grade = @"Excellent";
+    break;
+  case 6:
+  case 7:
+  case 8:
+    grade = @"Good";
+    break;
+  case 4:
+  case 5:
+    grade = @"Ok";
+    break;
+  case 1:
+  case 2:
+  case 3:
+    grade = @"Fail";
+    break;   
+  default:
+    grade = @"Fail";
+    break;
+}
 ```
 
 ---
