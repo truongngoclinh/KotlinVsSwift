@@ -405,14 +405,16 @@ for (Integer i : list) {
 
 ```kotlin
 val list = listOf(1, 2, 3, 4)
-list.filter { it % 2 == 0 }.forEach { print(it) }
+list.filter { it % 2 == 0 }
+    .forEach { print(it) }
 ```
 
 > Swift
 
 ```swift
 let list = [1, 2, 3, 4]
-list.filter({$0 % 2 == 0}).forEach({print("\($0)")})
+list.filter({$0 % 2 == 0})
+    .forEach({print("\($0)")})
 ```
 
 > Objective C
@@ -423,6 +425,35 @@ for (id item in array) {
      NSLog(@"%@", item);
   }
 }
+```
+
+---
+### Ternary expression
+> Java
+
+```java
+String result = //
+String message = result != null ? result : "empty result";
+```
+
+> Kotlin
+
+```kotlin
+var result = //
+var message = result ?: "empty result"
+```
+
+> Swift
+
+```swift
+var result: String?
+let message = result != nil ? result! : "empty result"
+```
+> Objective C
+
+```objective-c
+NSString *result;
+NSString *message = result ? result : @"Empty result";
 ```
 
 ---
