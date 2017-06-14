@@ -41,7 +41,7 @@ let name = "Linh Truong"
 ```
 > Objective C
 
-```c
+```java
 NSString *name = @"Linh Truong";
 static NSString *const name = @"Linh Truong";
 ```
@@ -81,7 +81,7 @@ var message = "My name is: \(firstName) \(lastName)"
 ```
 > Objective C
 
-```c
+```java
 NSLog("Linh Truong");
 NSLog("\nLinh Truong");
 
@@ -126,7 +126,7 @@ if let not_null_name = name {
 ```
 > Objective C
 
-```c
+```java
 NSString *name = @"Linh Truong";
 name = nil;
 
@@ -170,7 +170,7 @@ func add(x: Int, y: Int) -> Int {}
 
 > Objective C
 
-```c
+```java
 - (void)display:(NSString*)firstName :(NSString*)lastName {}
 [self display:@"Linh" :@"Truong"];
  
@@ -225,7 +225,7 @@ for (key, value) in dic {
 
 > Objective C
 
-```
+```java
 NSDictionary *dic = @{@"key1":@"value1", @"key2":@"value2"};
 
 [dic objectForKey:@"key1"];
@@ -234,6 +234,49 @@ NSDictionary *dic = @{@"key1":@"value1", @"key2":@"value2"};
 for (NSString* key in dic) {
   NSLog(@"%@", [dic objectForKey:key]);
 }
+
+```
+
+---
+### For loop
+> Java
+
+```java
+for (int i = 1; i <= 10 ; i++) { }
+for (int i = 1; i < 10 ; i++) { }
+for (int i = 10; i >= 1 ; i--) { }
+for (int i = 1; i <= 10 ; i+=2) { }
+for (int i = 10; i >= 1 ; i-=2) { }
+for (String item : collection) { }
+for (Map.Entry<String, String> entry: map.entrySet()) { }
+```
+
+> Kotlin
+
+```kotlin
+for (i in 1..10) { }
+for (i in 1 until 10) { }
+for (i in 10 downTo 1) { }
+for (i in 1..10 step 2) { }
+for (i in 10 downTo 1 step 2) { }
+for (item in collection) { }
+for ((key, value) in map) { }
+```
+
+> Swift
+
+```swift
+for i in 1...10 {}
+for i in 1..<10 {}
+for i in stride(from: 10, to: 1, by: -1) {} or for i in (1...10).reversed() {}
+for i in stride(from: 1, to: 10, by: 2) {}
+for i in stride(from: 10, to: 1, by: -2) {}
+for item in array {}
+for (k,v) in dic {}
+```
+
+> Objective C
+```java
 
 ```
 
