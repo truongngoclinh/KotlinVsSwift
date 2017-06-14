@@ -393,10 +393,10 @@ switch (score) {
 > Java
 
 ```java
-List<Integer> list = Arrays.asList(1, 2, 3, 4);
+final List<Integer> list = Arrays.asList(1, 2, 3, 4);
 for (Integer i : list) {
   if (i % 2 == 0) {
-    System.out.println(i);
+     System.out.println(i);
   }
 }
 ```
@@ -404,7 +404,7 @@ for (Integer i : list) {
 > Kotlin
 
 ```kotlin
-var list = listOf(1, 2, 3, 4)
+val list = listOf(1, 2, 3, 4)
 list.filter { it % 2 == 0 }.forEach { print(it) }
 ```
 
@@ -417,7 +417,7 @@ list.filter({$0 % 2 == 0}).forEach({print("\($0)")})
 
 > Objective C
 ```objective-c
-NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@1, @2, @3, @4, nil];
+NSArray *array = [[NSArray alloc] initWithObjects:@1, @2, @3, @4, nil];
 for (id item in array) {
   if ([item integerValue] % 2 == 0) {
      NSLog(@"%@", item);
