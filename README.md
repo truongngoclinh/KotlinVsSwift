@@ -3,9 +3,6 @@
 <img alt="Swift" height="200" width="300" src="https://cdn1.macworld.co.uk/cmsdata/features/3523633/swift_3_thumb800.jpg">
 </p>
 
-
-
-
 # Kotlin vs Swift 3 
 
 > Kotlin is Swift in Android? - How they look!
