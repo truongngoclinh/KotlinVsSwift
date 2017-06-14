@@ -389,6 +389,43 @@ switch (score) {
 ```
 
 ---
+### Filtering a list
+> Java
+
+```java
+List<Integer> list = Arrays.asList(1, 2, 3, 4);
+for (Integer i : list) {
+  if (i % 2 == 0) {
+    System.out.println(i);
+  }
+}
+```
+
+> Kotlin
+
+```kotlin
+var list = listOf(1, 2, 3, 4)
+list.filter { it % 2 == 0 }.forEach { print(it) }
+```
+
+> Swift
+
+```swift
+let list = [1, 2, 3, 4]
+list.filter({$0 % 2 == 0}).forEach({print("\($0)")})
+```
+
+> Objective C
+```objective-c
+NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@1, @2, @3, @4, nil];
+for (id item in array) {
+  if ([item integerValue] % 2 == 0) {
+     NSLog(@"%@", item);
+  }
+}
+```
+
+---
 
 Updating...
 
