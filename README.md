@@ -428,7 +428,7 @@ for (id item in array) {
 ```
 
 ---
-### Ternary expression
+### Ternary operator
 > Java
 
 ```java
