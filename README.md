@@ -433,21 +433,21 @@ for (id item in array) {
 
 ```java
 String result = //
-String message = result != null ? result : "empty result";
+String message = result != null ? result : "Empty result";
 ```
 
 > Kotlin
 
 ```kotlin
 var result = //
-var message = result ?: "empty result"
+var message = result ?: "Empty result"
 ```
 
 > Swift
 
 ```swift
 var result: String?
-let message = result != nil ? result! : "empty result"
+let message = result != nil ? result! : "Empty result"
 ```
 > Objective C
 
